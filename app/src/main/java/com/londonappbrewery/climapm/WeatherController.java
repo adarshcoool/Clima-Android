@@ -57,6 +57,8 @@ public class WeatherController extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.weather_controller_layout);
 
+        Toast.makeText(this, "Created by Adarsh!", Toast.LENGTH_LONG).show();
+
         // Linking the elements in the layout to Java code
         mCityLabel = (TextView) findViewById(R.id.locationTV);
         mWeatherImage = (ImageView) findViewById(R.id.weatherSymbolIV);
@@ -138,7 +140,7 @@ public class WeatherController extends AppCompatActivity {
 
             @Override
             public void onProviderDisabled(String provider) {
-                Log.d("Clima", "onProviderDisabled() callback recieeved");
+                Log.d("Clima", "onProviderDisabled() callback received");
             }
         };
 
